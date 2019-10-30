@@ -7,7 +7,11 @@ var client = restify.createJsonClient({
     url: 'http://localhost:'+process.env.PORT
 });
 
-client.basicAuth('pdq_logistics', 'DJSKEI-DKCM7879-HKJVDI-DNCDCU');
+require('dotenv').config();
+
+var CLIENT_KEY = process.env.CLIENT_KEY;
+
+client.basicAuth('pdq_logistics', CLIENT_KEY);
 
 var date = new Date();
 
