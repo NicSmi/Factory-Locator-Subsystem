@@ -66,3 +66,5 @@ typings/
 /test_server/newfactorysuggestions
 
 /test_server/.env
+
+/populatedb/.env 
