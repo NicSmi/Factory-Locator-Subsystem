@@ -59,3 +59,8 @@ typings/
 
 # next.js build output
 .next
+
+# Test Output Files
+/test_server/chineseAddress
+
+/test_server/newfactorysuggestions
