@@ -1,0 +1,22 @@
+{
+  "name": "pdq-factory-locator",
+  "version": "1.0.0",
+  "description": "Factory Locator Subsystem for Pizza Delivered Quickly",
+  "main": "factory-server.mjs",
+  "scripts": {
+    "start": "cross-env PORT=3333 DEBUG=factory:* MONGO_URL=mongodb://localhost/pdqfactorylocator node --experimental-modules ./factory-server.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KOD Inc.",
+  "license": "MIT",
+  "dependencies": {
+    "cross-env": "6.0.3",
+    "debug": "4.1.1",
+    "dotenv": "8.2.0",
+    "fs-extra": "8.1.0",
+    "mongodb": "3.3.3",
+    "restify": "8.4.0",
+    "restify-clients": "2.6.7",
+    "superagent": "5.1.0"
+  }
+}
