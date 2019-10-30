@@ -64,3 +64,5 @@ typings/
 /test_server/chineseAddress
 
 /test_server/newfactorysuggestions
+
+/test_server/.env
