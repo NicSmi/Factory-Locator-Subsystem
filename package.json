@@ -4,7 +4,7 @@
   "description": "Factory Locator Subsystem for Pizza Delivered Quickly",
   "main": "factory-server.mjs",
   "scripts": {
-    "start": "cross-env DEBUG=factory:* node --experimental-modules ./factory-server.mjs",
+    "start": "cross-env PORT=3333 DEBUG=factory:* node --experimental-modules ./factory-server.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "KOD Inc.",
