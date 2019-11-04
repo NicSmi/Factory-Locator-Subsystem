@@ -68,3 +68,5 @@ typings/
 /test_server/.env
 
 /populatedb/.env 
+
+.DS_Store

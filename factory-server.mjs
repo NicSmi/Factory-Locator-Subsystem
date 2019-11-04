@@ -164,7 +164,7 @@ server.get('/newfactorylocationsuggestion', async(req, res, next) => {
 
 
 
-server.listen(process.env.PORT, "localhost", function(){
+server.listen(process.env.PORT, "0.0.0.0", function(){
     log(server.name +' listening at '+ server.url);
 })
 

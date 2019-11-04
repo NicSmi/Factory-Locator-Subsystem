@@ -1,7 +1,7 @@
-FROM node:10
+FROM node:latest
 
 # Create app directory
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json 
@@ -17,4 +17,6 @@ COPY . .
 
 EXPOSE 8080
 
-CMD [ "npm",  "start"]
+#CMD [ "npm",  "start"]
+
+ENTRYPOINT [ "npm", "start" ]
