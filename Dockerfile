@@ -17,4 +17,4 @@ COPY . .
 
 EXPOSE 8080
 
-CMD [ "node", "--experimental-modules",  "./factory-server.mjs"]
+CMD [ "npm",  "start"]
