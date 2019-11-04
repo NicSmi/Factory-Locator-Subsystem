@@ -32,7 +32,7 @@ client.basicAuth('pdq_logistics', CLIENT_KEY);
 // });
 
 client.post('/nearestfactory', {
-    orig: `江苏省-苏州市-虎丘区-科普路167号`
+    orig: `江苏省苏州市虎丘区松花江路368号`
 },
 (err, req, res, obj) =>{
     if (err) console.error(err);
