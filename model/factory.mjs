@@ -84,7 +84,7 @@ export default class Factory {
                 fact_street: this.fact_street,
                 street_number: this.fact_street_number
             }
-        }, null, 4);
+        });  // }, null, 4)
     }
 
     static fromJSON(json) {
