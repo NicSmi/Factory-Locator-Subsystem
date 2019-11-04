@@ -124,5 +124,12 @@ export async function newFactoryLocation() {
     var addressfrompoints = await reverseGeoCodeAsync(recoPoints.latitude, recoPoints.longitude);
     console.log(addressfrompoints);
     var resParsed = JSON.parse(addressfrompoints);
-    return resParsed.result;
+    console.log(recoPoints.latitude);
+    if (isNaN(recoPoints.latitude)){
+        return `No order data available to make suuggestion`;
+    }
+    else{
+        return resParsed.result;
+    }
+    
 }

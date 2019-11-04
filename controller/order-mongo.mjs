@@ -41,6 +41,6 @@ export async function findAllOrderCoordinates(){
             } 
         );
     });
-    //console.log(orderloc);
+    console.log(orderloc);
     return orderloc;
 }
