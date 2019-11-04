@@ -58,10 +58,10 @@ server.post('/update-factory:factoryname', async (req, res, next) => {
 // Find the factory data 
 server.get('/find:factoryname', async (req, res, next) => {
     try {
-        var facto = await factoryModel.read(req.params.factoryname);
+        var facto = await factoryModel.read(req.query.factoryname);
         if(!facto) {
             //res.send(404, new Error(`Did not find ${req.params.factoryname}`));
-            res.send(`Did not find ${req.params.factoryname}`);
+            res.send(`Did not find ${req.query.factoryname}`);
         } else {
             //console.log(facto);
             res.send(facto);
@@ -70,7 +70,7 @@ server.get('/find:factoryname', async (req, res, next) => {
     } catch(err) {
         console.log(err);
         console.log("\nUnable to find queried factory, It doesn't exist");
-        res.send(`\nDid not find ${req.params.factoryname}`);
+        res.send(`\nDid not find ${req.query.factoryname}`);
         //res.send(500, err); next(false);
     }
 });

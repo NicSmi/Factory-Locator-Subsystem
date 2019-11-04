@@ -15,8 +15,9 @@ var CLIENT_KEY = process.env.CLIENT_KEY;
 client.basicAuth('pdq_logistics', CLIENT_KEY);
 
 
- client.get('/find'+ process.argv[2], 
+ client.get('/find?factoryname='+ process.argv[2], 
  (err, req, res, obj) => {
+	 let s = JSON.parse(obj);
      if (err) console.error(err.stack);
-     else console.log('Server Response: '+ obj);//util.inspect(obj));
+     else console.log('Server Response: '+ s.name);//util.inspect(obj));
  });
