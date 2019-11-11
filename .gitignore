@@ -69,4 +69,6 @@ typings/
 
 /populatedb/.env 
 
+.DS_Store
+
  
