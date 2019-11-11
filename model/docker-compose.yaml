@@ -1,0 +1,13 @@
+version: ""
+services :
+  factory_locator_subsystem:
+    build: .
+    deploy: 
+      replicas: 5
+      placement:
+        contraints: [node.role == manager]
+    container_name: fact_loc
+    ports:
+      - "3000:3000"
+    restart: always
+    
