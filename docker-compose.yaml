@@ -1,13 +1,13 @@
-version: ""
+version: "3"
 services :
   factory_locator_subsystem:
-    build: .
+    image: 1eedwlwaw435eeed23/factlocsub
     deploy: 
-      replicas: 5
+      replicas: 10
       placement:
-        contraints: [node.role == manager]
+        constraints: [node.role == manager]
     container_name: fact_loc
     ports:
-      - "3000:3000"
+      - "3232:8080"
     restart: always
     
